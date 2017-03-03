@@ -7,21 +7,64 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		379B02151DB2D2C5004C9EE4 /* ModalPresentationAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379B02141DB2D2C5004C9EE4 /* ModalPresentationAnimationController.swift */; };
+		379B02191DB2D7B3004C9EE4 /* SimpleModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379B02181DB2D7B3004C9EE4 /* SimpleModal.swift */; };
+		379B02261DB3021E004C9EE4 /* Rex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 379B02161DB2D6D2004C9EE4 /* Rex.framework */; };
+		379B02271DB3021E004C9EE4 /* Rex.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 379B02161DB2D6D2004C9EE4 /* Rex.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		379B02281DB3021E004C9EE4 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 379B02111DB2CDF4004C9EE4 /* Result.framework */; };
+		379B02291DB3021E004C9EE4 /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 379B02111DB2CDF4004C9EE4 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		379B022A1DB3021E004C9EE4 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 379B020F1DB2CDF2004C9EE4 /* ReactiveCocoa.framework */; };
+		379B022B1DB3021E004C9EE4 /* ReactiveCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 379B020F1DB2CDF2004C9EE4 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		37BE95F41E69EB0E00BB48CF /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BE95F31E69EB0D00BB48CF /* MainViewModel.swift */; };
+		37D74EE31DA455F600159F60 /* ModalPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D74EE21DA455F600159F60 /* ModalPresentationController.swift */; };
 		37F6CAF81D9DBC0700151F15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F6CAF71D9DBC0700151F15 /* AppDelegate.swift */; };
 		37F6CAFA1D9DBC0700151F15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F6CAF91D9DBC0700151F15 /* ViewController.swift */; };
-		37F6CAFD1D9DBC0700151F15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37F6CAFB1D9DBC0700151F15 /* Main.storyboard */; };
 		37F6CAFF1D9DBC0700151F15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37F6CAFE1D9DBC0700151F15 /* Assets.xcassets */; };
-		37F6CB021D9DBC0700151F15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37F6CB001D9DBC0700151F15 /* LaunchScreen.storyboard */; };
+		37F6CB0A1D9DBC2500151F15 /* ModalView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37F6CB091D9DBC2500151F15 /* ModalView.xib */; };
+		37F6CB0C1D9DBE6600151F15 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F6CB0B1D9DBE6600151F15 /* ModalView.swift */; };
+		37F6CB0E1D9DBE6E00151F15 /* ModalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F6CB0D1D9DBE6E00151F15 /* ModalController.swift */; };
+		37F6CB101D9DBE7800151F15 /* ModalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F6CB0F1D9DBE7800151F15 /* ModalViewModel.swift */; };
+		37F6CB121D9DC30F00151F15 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F6CB111D9DC30F00151F15 /* UIViewExtension.swift */; };
+		37F6CB141D9DD09100151F15 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F6CB131D9DD09100151F15 /* MainView.swift */; };
+		37F6CB161D9DD09C00151F15 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37F6CB151D9DD09C00151F15 /* MainView.xib */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		379B022C1DB3021E004C9EE4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				379B02271DB3021E004C9EE4 /* Rex.framework in Embed Frameworks */,
+				379B022B1DB3021E004C9EE4 /* ReactiveCocoa.framework in Embed Frameworks */,
+				379B02291DB3021E004C9EE4 /* Result.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		379B020F1DB2CDF2004C9EE4 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
+		379B02111DB2CDF4004C9EE4 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		379B02141DB2D2C5004C9EE4 /* ModalPresentationAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalPresentationAnimationController.swift; sourceTree = "<group>"; };
+		379B02161DB2D6D2004C9EE4 /* Rex.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Rex.framework; path = Carthage/Build/iOS/Rex.framework; sourceTree = "<group>"; };
+		379B02181DB2D7B3004C9EE4 /* SimpleModal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleModal.swift; sourceTree = "<group>"; };
+		37BE95F31E69EB0D00BB48CF /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		37D74EE21DA455F600159F60 /* ModalPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalPresentationController.swift; sourceTree = "<group>"; };
 		37F6CAF41D9DBC0700151F15 /* Modal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Modal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37F6CAF71D9DBC0700151F15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37F6CAF91D9DBC0700151F15 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		37F6CAFC1D9DBC0700151F15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		37F6CAFE1D9DBC0700151F15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		37F6CB011D9DBC0700151F15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		37F6CB031D9DBC0700151F15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37F6CAFE1D9DBC0700151F15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Modal/Assets.xcassets; sourceTree = "<group>"; };
+		37F6CB031D9DBC0700151F15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Modal/Info.plist; sourceTree = "<group>"; };
+		37F6CB091D9DBC2500151F15 /* ModalView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModalView.xib; sourceTree = "<group>"; };
+		37F6CB0B1D9DBE6600151F15 /* ModalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
+		37F6CB0D1D9DBE6E00151F15 /* ModalController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalController.swift; sourceTree = "<group>"; };
+		37F6CB0F1D9DBE7800151F15 /* ModalViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalViewModel.swift; sourceTree = "<group>"; };
+		37F6CB111D9DC30F00151F15 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		37F6CB131D9DD09100151F15 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		37F6CB151D9DD09C00151F15 /* MainView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +72,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				379B02261DB3021E004C9EE4 /* Rex.framework in Frameworks */,
+				379B022A1DB3021E004C9EE4 /* ReactiveCocoa.framework in Frameworks */,
+				379B02281DB3021E004C9EE4 /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		379B020E1DB2CDEF004C9EE4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				379B02161DB2D6D2004C9EE4 /* Rex.framework */,
+				379B02111DB2CDF4004C9EE4 /* Result.framework */,
+				379B020F1DB2CDF2004C9EE4 /* ReactiveCocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		37F6CAEB1D9DBC0600151F15 = {
 			isa = PBXGroup;
 			children = (
 				37F6CAF61D9DBC0700151F15 /* Modal */,
+				37F6CAFE1D9DBC0700151F15 /* Assets.xcassets */,
+				37F6CB031D9DBC0700151F15 /* Info.plist */,
 				37F6CAF51D9DBC0700151F15 /* Products */,
+				379B020E1DB2CDEF004C9EE4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +114,44 @@
 			isa = PBXGroup;
 			children = (
 				37F6CAF71D9DBC0700151F15 /* AppDelegate.swift */,
-				37F6CAF91D9DBC0700151F15 /* ViewController.swift */,
-				37F6CAFB1D9DBC0700151F15 /* Main.storyboard */,
-				37F6CAFE1D9DBC0700151F15 /* Assets.xcassets */,
-				37F6CB001D9DBC0700151F15 /* LaunchScreen.storyboard */,
-				37F6CB031D9DBC0700151F15 /* Info.plist */,
+				37F6CB171D9DD18700151F15 /* MainView */,
+				37F6CB181D9DD19300151F15 /* Modal */,
+				37F6CB191D9DD25D00151F15 /* Extensions */,
+				379B02181DB2D7B3004C9EE4 /* SimpleModal.swift */,
 			);
 			path = Modal;
+			sourceTree = "<group>";
+		};
+		37F6CB171D9DD18700151F15 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				37F6CAF91D9DBC0700151F15 /* ViewController.swift */,
+				37F6CB151D9DD09C00151F15 /* MainView.xib */,
+				37F6CB131D9DD09100151F15 /* MainView.swift */,
+				37BE95F31E69EB0D00BB48CF /* MainViewModel.swift */,
+			);
+			name = MainView;
+			sourceTree = "<group>";
+		};
+		37F6CB181D9DD19300151F15 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				37F6CB091D9DBC2500151F15 /* ModalView.xib */,
+				37F6CB0B1D9DBE6600151F15 /* ModalView.swift */,
+				37F6CB0F1D9DBE7800151F15 /* ModalViewModel.swift */,
+				37F6CB0D1D9DBE6E00151F15 /* ModalController.swift */,
+				37D74EE21DA455F600159F60 /* ModalPresentationController.swift */,
+				379B02141DB2D2C5004C9EE4 /* ModalPresentationAnimationController.swift */,
+			);
+			name = Modal;
+			sourceTree = "<group>";
+		};
+		37F6CB191D9DD25D00151F15 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				37F6CB111D9DC30F00151F15 /* UIViewExtension.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +164,8 @@
 				37F6CAF01D9DBC0600151F15 /* Sources */,
 				37F6CAF11D9DBC0600151F15 /* Frameworks */,
 				37F6CAF21D9DBC0600151F15 /* Resources */,
+				379B02131DB2CE06004C9EE4 /* Carthage */,
+				379B022C1DB3021E004C9EE4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,44 +215,51 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37F6CB021D9DBC0700151F15 /* LaunchScreen.storyboard in Resources */,
 				37F6CAFF1D9DBC0700151F15 /* Assets.xcassets in Resources */,
-				37F6CAFD1D9DBC0700151F15 /* Main.storyboard in Resources */,
+				37F6CB161D9DD09C00151F15 /* MainView.xib in Resources */,
+				37F6CB0A1D9DBC2500151F15 /* ModalView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		379B02131DB2CE06004C9EE4 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Carthage;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "$SRCROOT/Carthage/Build/iOS/Result.framework\n$SRCROOT/Carthage/Build/iOS/ReactiveCocoa.framework\n$SRCROOT/Carthage/Build/iOS/Rex.framework";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		37F6CAF01D9DBC0600151F15 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37F6CB121D9DC30F00151F15 /* UIViewExtension.swift in Sources */,
+				379B02151DB2D2C5004C9EE4 /* ModalPresentationAnimationController.swift in Sources */,
+				37F6CB141D9DD09100151F15 /* MainView.swift in Sources */,
+				379B02191DB2D7B3004C9EE4 /* SimpleModal.swift in Sources */,
+				37F6CB0C1D9DBE6600151F15 /* ModalView.swift in Sources */,
+				37D74EE31DA455F600159F60 /* ModalPresentationController.swift in Sources */,
+				37F6CB0E1D9DBE6E00151F15 /* ModalController.swift in Sources */,
+				37F6CB101D9DBE7800151F15 /* ModalViewModel.swift in Sources */,
 				37F6CAFA1D9DBC0700151F15 /* ViewController.swift in Sources */,
 				37F6CAF81D9DBC0700151F15 /* AppDelegate.swift in Sources */,
+				37BE95F41E69EB0E00BB48CF /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		37F6CAFB1D9DBC0700151F15 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				37F6CAFC1D9DBC0700151F15 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		37F6CB001D9DBC0700151F15 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				37F6CB011D9DBC0700151F15 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		37F6CB041D9DBC0700151F15 /* Debug */ = {
@@ -258,11 +357,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Modal/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks $(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dtilve.Modal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -270,11 +373,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Modal/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks $(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dtilve.Modal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -288,7 +395,7 @@
 				37F6CB051D9DBC0700151F15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		37F6CB061D9DBC0700151F15 /* Build configuration list for PBXNativeTarget "Modal" */ = {
 			isa = XCConfigurationList;
@@ -297,6 +404,7 @@
 				37F6CB081D9DBC0700151F15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
